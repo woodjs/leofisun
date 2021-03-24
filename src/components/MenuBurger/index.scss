@@ -1,0 +1,52 @@
+@import '../../assets/scss/variable.scss';
+
+.menu--mobile {
+  display: none;
+}
+
+.menu-burger {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  position: relative;
+
+  &__lines,
+  &__lines::before,
+  &__lines::after {
+    position: absolute;
+    height: 2px;
+    background: $lightColor;
+    border-radius: 100px;
+  }
+
+  &__lines::before,
+  &__lines::after {
+    content: '';
+  }
+
+  &__lines,
+  &__lines::before {
+    width: 100%;
+  }
+
+  &__lines {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  &__lines::before {
+    bottom: 6px;
+  }
+
+  &__lines::after {
+    top: 6px;
+    right: 0;
+    width: 12px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .menu--mobile {
+    display: flex;
+  }
+}

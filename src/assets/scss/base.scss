@@ -1,0 +1,27 @@
+@import './variable.scss';
+
+body {
+  background: $mainColor;
+  letter-spacing: 0.32px;
+}
+
+.gradient-text {
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  &--gradient {
+    background-image: $gradient;
+  }
+
+  // &--to {
+  //   background-image: $gradientTo;
+  // }
+}
+
+.lt {
+  letter-spacing: 0.32px;
+}
+
+.border-gradient {
+  border-image-slice: 1;
+}

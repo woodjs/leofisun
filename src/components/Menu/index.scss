@@ -1,0 +1,79 @@
+@import '../../assets/scss/fonts.scss';
+@import '../../assets/scss/variable.scss';
+
+.menu {
+  width: 100%;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: $Corsica;
+
+  &__list {
+    display: flex;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    margin-right: 60px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &-icons {
+    position: relative;
+    width: 24px;
+    height: 24px;
+    margin-right: 9px;
+
+    &__item {
+      position: absolute;
+      left: 0;
+      top: 0;
+      transition: 0.2s;
+
+      &--gradient {
+        opacity: 0;
+      }
+    }
+  }
+
+  &-link {
+    color: $lightColor;
+    text-decoration: none;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+
+    &--active {
+      border: 1px solid;
+      border-image-slice: 1;
+      border-image-source: $gradient;
+    }
+
+    &__arrow {
+      margin-top: 3px;
+      margin-left: 10px;
+      transition: 0.2s;
+
+      &--active {
+        transform: rotate(90deg);
+      }
+    }
+  }
+
+  &-link:hover &-icons__item--gradient,
+  &-link--active &-icons__item--gradient {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 1200px) {
+  .menu--desktop {
+    display: none;
+  }
+}
