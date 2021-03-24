@@ -6,6 +6,8 @@
   background: $darkColor;
   padding: 31px 24px;
   box-sizing: border-box;
+  // height: 100%;
+  z-index: 99;
 
   &-overlay {
     width: 100%;
@@ -16,6 +18,7 @@
     left: 0;
     transition: 0.3s;
     overflow: hidden;
+    z-index: 99;
 
     &--active {
       height: calc(100vh - 90px);
@@ -62,6 +65,7 @@
       border: 1px solid;
       border-image-slice: 1;
       border-image-source: $gradient;
+      max-width: 150px;
     }
 
     &__arrow {

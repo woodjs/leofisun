@@ -8,6 +8,11 @@ const MenuBurger = () => {
 
   const handleClickBurger = () => {
     setMenuOpen(() => !menuOpen);
+    if (menuOpen) {
+      document.body.style = '';
+    } else {
+      document.body.style = 'overflow: hidden';
+    }
   };
   return (
     <div className="menu menu--mobile">

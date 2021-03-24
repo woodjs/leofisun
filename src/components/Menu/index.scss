@@ -8,6 +8,7 @@
   align-items: center;
   justify-content: space-between;
   font-family: $Corsica;
+  z-index: 99;
 
   &__list {
     display: flex;
