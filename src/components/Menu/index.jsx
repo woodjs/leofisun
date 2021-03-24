@@ -372,7 +372,9 @@ const Menu = () => {
           </li>
         </ul>
       </nav>
-      <Button>Связаться</Button>
+      <Button type="sm" type="gold">
+        Связаться
+      </Button>
       <Submenu status={submenu} />
     </div>
   );

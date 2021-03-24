@@ -5,6 +5,12 @@ body {
   letter-spacing: 0.32px;
 }
 
+.container {
+  max-width: 1600px;
+  width: 100%;
+  margin: 0 auto;
+}
+
 .gradient-text {
   background-clip: text;
   -webkit-text-fill-color: transparent;
