@@ -31,3 +31,9 @@ body {
 .border-gradient {
   border-image-slice: 1;
 }
+
+@media (max-width: 1600px) {
+  .container {
+    max-width: 98%;
+  }
+}
