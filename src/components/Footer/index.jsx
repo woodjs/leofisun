@@ -241,13 +241,13 @@ const Footer = () => (
             </div>
           </div>
 
-          <div className='footer-wrapper'>
+          <div className='footer-wrapper footer-wrapper_hidden'>
             <h3 className='footer__title'>Leowine.fun</h3>
 
             <span className='footer__text'>© ООО «Все права защищены»</span>
           </div>
 
-          <div className='footer-wrapper'>
+          <div className='footer-wrapper footer-wrapper_hidden'>
             <h3 className='footer__title'>Связь со мной</h3>
 
             <div className='footer-media'>
@@ -361,6 +361,12 @@ const Footer = () => (
               </filter>
             </defs>
           </svg>
+        </div>
+
+        <div className='footer-wrapper footer-wrapper_visible'>
+          <h3 className='footer__title'>Leowine.fun</h3>
+
+          <span className='footer__text'>© ООО «Все права защищены»</span>
         </div>
       </div>
     </Container>
