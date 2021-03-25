@@ -372,7 +372,7 @@ const Menu = () => {
           </li>
         </ul>
       </nav>
-      <Button type="sm" type="gold">
+      <Button size="sm" type="gold">
         Связаться
       </Button>
       <Submenu status={submenu} />

@@ -6,7 +6,6 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <ContactForm />
       <section className="about">
         <div className="container">
           <div className="profile">
@@ -126,15 +125,7 @@ function App() {
           </div>
         </div>
       </section>
-
-      <section className="section-form">
-        <div className="container">
-          <div className="section-wrap">
-            <p className="section__title">Контакты</p>
-          </div>
-          <div className="contact">213</div>
-        </div>
-      </section>
+      <ContactForm />
       <Footer />
     </div>
   );
